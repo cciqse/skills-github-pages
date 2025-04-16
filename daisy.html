@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Daisy - Marc Jacobs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #FFF8E7;
+      color: #3E2F1C;
+    }
+
+    header {
+      background-color: #F5D28E;
+      text-align: center;
+      padding: 50px 20px;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .intro img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .card {
+      background: #FDFDFD;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 15px 0;
+    }
+
+    h3 {
+      color: #D4AF37;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #F5D28E;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Daisy by Marc Jacobs</h1>
+</header>
+
+<section class="intro">
+  <img src=daisy.jpg>
+  <p>Un parfum jucăuș, floral, și elegant, Daisy reflectă libertatea și feminitatea tinerească. Creat de legendarul parfumier Alberto Morillas pentru Marc Jacobs.</p>
+</section>
+
+<section class="details">
+  <div class="card">
+    <h3>Note Olfactive</h3>
+    <p><strong>Vârf:</strong> căpșuni, frunze de violetă, grepfrut roz<br>
+    <strong>Mijloc:</strong> iasomie, violetă, gardenie<br>
+    <strong>Bază:</strong> mosc, lemn alb, vanilie</p>
+  </div>
+
+  <div class="card">
+    <h3>Despre Marc Jacobs</h3>
+    <p>Designer american renumit pentru creații îndrăznețe și inovatoare. A fost director creativ la Louis Vuitton și a lansat numeroase parfumuri iconice.</p>
+  </div>
+
+<div class="card">
+    <h3>Parfumul Daisy</h3>
+    <p>Parfumul Daisy de la Marc Jacobs este ca o zi de primăvară prinsă într-o sticluță. De cum îl simți, te învăluie un miros proaspăt și dulce, ca o adiere de flori de câmp și fructe coapte. Nu e un parfum care strigă, ci unul care șoptește – o poveste delicată despre feminitate, naturalețe și bucurie.
+
+Culoarea sa aurie și florile albe de pe capac îți dau senzația că ai în mână o rază de soare. Notele de căpșuni și grepfrut se împletesc perfect cu florile de violetă și iasomie, iar la final rămâne o urmă caldă, ca o îmbrățișare – de mosc, lemn alb și vanilie.
+
+Pentru mine, Daisy nu este doar un parfum. Este o stare de bine, un zâmbet, o amintire frumoasă pe care o port cu mine în fiecare zi. Ori de câte ori îl folosesc, simt că pășesc în lumea mea, plină de flori, visuri și lumină.</p>
+  </div>
+
+</section>
+
+
+  <meta charset="UTF-8">
+  <title>Parfum Daisy - Comandă</title>
+  <style>
+    body {
+      background-color: #FFF8E7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .btn {
+      background-color: #F5D28E;
+      color: #3E2F1C;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #E6B86B;
+    }
+
+    .btn-secondary {
+      background-color: white;
+      color: #D4AF37;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: 2px solid #D4AF37;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+
+    .btn-secondary:hover {
+      background-color: #FFF3D0;
+    }
+
+    #product-info {
+      margin-top: 30px;
+      display: none;
+      background: #FDFDFD;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #product-info h3 {
+      color: #D4AF37;
+      margin-bottom: 10px;
+    }
+
+    #added-message {
+      display: none;
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="btn">Află mai multe</button>
+  <button class="btn-secondary" onclick="showProduct()">Cumpără acum</button>
+
+  <div id="product-info">
+    <h3>Parfum Daisy by Marc Jacobs</h3>
+    <p>Preț: <strong>379 lei</strong></p>
+    <p>Disponibilitate: În stoc</p>
+    <button class="btn" onclick="addToCart()">Adaugă în coș</button>
+    <p id="added-message">✔️ Produsul a fost adăugat în coș!</p>
+  </div>
+
+  <script>
+    function showProduct() {
+      var info = document.getElementById('product-info');
+      var msg = document.getElementById('added-message');
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+      msg.style.display = "none"; // ascundem mesajul la redeschidere
+    }
+
+    function addToCart() {
+      var msg = document.getElementById('added-message');
+      msg.style.display = "block";
+    }
+  </script>
+
+
+
+
+<footer>
+  &copy; 2025 Blog Parfumuri - Inspirație cu stil
+</footer>
+
+</body>
+</html>
